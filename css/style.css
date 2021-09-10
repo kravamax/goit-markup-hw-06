@@ -54,7 +54,8 @@ ul {
   padding-left: 0;
 }
 
-p {
+p,
+b {
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -537,6 +538,8 @@ img {
 /* ------------------------- SUBSCRIBE FOOTER -------------------------  */
 
 .subscribe {
+  display: flex;
+  flex-direction: column;
   margin-left: 70px;
 }
 
@@ -562,6 +565,58 @@ img {
 .subscribe .social-link:hover,
 .subscribe .social-link:focus {
   background-color: var(--accent-color);
+}
+
+/* ------------------------- MAILING FOOTER -------------------------  */
+
+.mailing {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+}
+
+.mail-form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.mailing-input {
+  padding: 14px 15px;
+  width: 358px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.mailing .mailing-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.mailing-button {
+  position: relative;
+  margin: 0;
+  margin-left: 12px;
+  min-width: 200px;
+  padding: 10px;
+  padding-left: 29px;
+  text-align: left;
+}
+
+.mailing-icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+
+  fill: #ffffff;
 }
 
 /* ------------------------- --------- -------------------------  */
