@@ -508,6 +508,90 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
+
+        <b class="modal-title">Оставьте свои данные, мы вам перезвоним</b>
+        <form action="" class="modal-form">
+          <div class="modal-field">
+            <label for="input-name" class="input-label">Имя</label>
+            <span class="input-box">
+              <input
+                class="input-field"
+                type="text"
+                name="input-name"
+                id="input-name"
+                required
+              />
+              <svg class="modal-icon-field" width="12" height="12">
+                <use href="./images/icons.svg#icon-modal-name"></use>
+              </svg>
+            </span>
+          </div>
+
+          <div class="modal-field">
+            <label for="input-tel" class="input-label">Телефон</label>
+            <span class="input-box">
+              <input
+                class="input-field"
+                type="tel"
+                name="input-tel"
+                id="input-tel"
+                required
+              />
+              <svg class="modal-icon-field" width="13" height="13">
+                <use href="./images/icons.svg#icon-modal-tel"></use>
+              </svg>
+            </span>
+          </div>
+
+          <div class="modal-field">
+            <label for="input-email" class="input-label">Почта</label>
+            <span class="input-box">
+              <input
+                class="input-field"
+                type="email"
+                name="input-email"
+                id="input-email"
+                required
+              />
+              <svg class="modal-icon-field" width="15" height="12">
+                <use href="./images/icons.svg#icon-modal-email"></use>
+              </svg>
+            </span>
+          </div>
+
+          <div class="modal-field">
+            <label for="textarea-label" class="input-label">Комментарий</label>
+            <textarea
+              class="textarea-field input-field"
+              name="textarea-label"
+              id="textarea-label"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+
+          <div class="accept-field">
+            <input
+              type="checkbox"
+              name="accept-checkbox"
+              id="accept-checkbox"
+              class="default-checkbox visually-hidden"
+              required
+            />
+            <label class="accept-label" for="accept-checkbox">
+              <span class="custom-checkbox">
+                <svg class="checkbox-icon" width="11" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю&nbsp;
+              <a href="" class="accept-link">Условия договора</a>
+            </label>
+          </div>
+
+          <button class="modal-btn hero-btn btn" type="submit">
+            Отправить
+          </button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
